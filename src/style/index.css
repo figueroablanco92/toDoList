@@ -1,0 +1,6 @@
+.fondo{
+    background: url("../assets/img/bg-1.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}

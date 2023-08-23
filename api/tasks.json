@@ -1,5 +1,15 @@
 {
-    "tasks":[
+    "users":[
+        {
+            "id":1,
+            "name":"alex",
+            "pass":"123"
+        },
+        {
+            "id":2,
+            "name":"jimmy",
+            "pass":"321"
+        }
        
     ]
 }

@@ -15,10 +15,125 @@
   </head>
   <body>
 
+    <div class="row fondo align-items-center">
+        
+    </div>
+  
+      <nav class="navbar navbar-expand-md bg-light sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./src/assets/img/logo.jpg" alt="Logo" width="30px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skill</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#login">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+      <div class="container mt-3 text-center">
+        <h2 class="text-center text-uppercase fst-italic fw-bold" id="skills">
+          ToDoList
+        </h2>
+        <div class="card d-inline-block" style="width: 18rem">
+          <img src="./src/assets/img/logo.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Una lista de tareas que tu tienes que hacer, o cosas que tu quieres hacer
+            </p>
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              class="btn btn-dark"
+              >Ver detalles</a
+            >
+          </div>
+        </div>
+  
+  
+      <div class="container mt-4">
+        <h2 class="text-center text-uppercase fst-italic fw-bold" id="login">
+          Login
+        </h2>
+        
+        <form id="login-form" class="row">
+            <div class="mb-3 col-12">
+                <label for="txtUser" class="form-label">Usuario</label>
+                <input type="text" class="form-control" id="txtUser" >
+            </div>
+            <div class="mb-3 col-12">
+                <label for="txtPass" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="txtPass" >
+            </div>
+            <div class="d-grid gap-2">
+                <input class="btn btn-primary" type="submit" value="Login" id="btnLogin">
+            </div>
+        </form>
+
+      </div>
+  
+      <div class="container p-4 bg-light text-center">Copyright 2023</div>
+  
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">ToDoList</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <p style="text-align: justify">
+                Una app que te permite gestionar tus tareas, teniendo como funcionalidades principales
+                agregar una tarea, eliminar una tarea, modificar una tarea y listar el conjunto de tareas
+                creadas pudiendo filtrar las tareas por fecha de creacion y vencimiento o por su estado ya 
+                sea que la tarea se haya completado.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./src/controller/ControladorLogin.js" type="module"></script>
 </body>
 </html>
