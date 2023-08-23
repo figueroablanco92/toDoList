@@ -11,5 +11,20 @@
             "pass":"321"
         }
        
+    ],
+    "tasks":[
+        {
+            "id":0,
+            "title":"tarea1",
+            "description":"esta es una descripcion",
+            "completed":false
+        },
+        {
+            "id":1,
+            "title":"tarea2",
+            "description":"esta es una descripcion",
+            "completed":false
+        }
+
     ]
 }
