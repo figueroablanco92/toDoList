@@ -1,30 +1,34 @@
 {
-    "users":[
-        {
-            "id":1,
-            "name":"alex",
-            "pass":"123"
-        },
-        {
-            "id":2,
-            "name":"jimmy",
-            "pass":"321"
-        }
-       
-    ],
-    "tasks":[
-        {
-            "id":0,
-            "title":"tarea1",
-            "description":"esta es una descripcion",
-            "completed":false
-        },
-        {
-            "id":1,
-            "title":"tarea2",
-            "description":"esta es una descripcion",
-            "completed":false
-        }
-
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "alex",
+      "pass": "123"
+    },
+    {
+      "id": 2,
+      "name": "jimmy",
+      "pass": "321"
+    }
+  ],
+  "tasks": [
+    {
+      "title": "aprender react",
+      "description": "prioridad",
+      "completed": false,
+      "id": 1
+    },
+    {
+      "title": "repasar metodologías ágiles",
+      "description": "el fin de semana",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "title": "terminar el proyecto",
+      "description": "los minimos🤞",
+      "completed": false,
+      "id": 3
+    }
+  ]
 }

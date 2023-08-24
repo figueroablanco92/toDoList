@@ -8,7 +8,7 @@ export default class Conexion{
             if( options.method == 'GET'){
                 result = await fetch( url, options)
                 data = await result.json()
-            }else if( options.method == 'PUT'){
+            }else{
                 result = await fetch( url, options)
                 return 
             }

@@ -17,9 +17,6 @@
   <body>
       <nav class="navbar navbar-expand-md bg-light sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img src="../assets/img/logo.jpg" alt="Logo" width="30px"
-          /></a>
           <h4 id="currentUser"></h4>
           <button
             class="navbar-toggler"
@@ -49,7 +46,7 @@
 
         <form id="form-task">
           <div class="mb-3">
-            <input type="hidden" class="form-control" name="idd">
+            <input type="hidden" class="form-control" name="id">
           </div>
           <div class="mb-3">
             <label for="txtTitleTask" class="form-label">Titulo</label>
@@ -76,9 +73,9 @@
           <h2 class="title-task"></h2>
           <p class="description-task"></p>
           <h3>
-            <i class="fa-solid fa-circle-check text-success"></i>
-            <i class="fa-solid fa-pen-to-square text-info"></i>
-            <i class="fa-solid fa-circle-minus text-danger"></i>
+            <i class="fa-solid fa-circle-check text-success" role="button"></i>
+            <i class="fa-solid fa-pen-to-square text-info" role="button"></i>
+            <i class="fa-solid fa-circle-minus text-danger" role="button"></i>
           </h3>
         </div>
       </template>

@@ -4,6 +4,7 @@ import Conexion from "../utils/Conexion.js"
 export default class LoginConsultas{
 
     static async verificarUsuario( usuario ){
+        let messageError = ""
 
         const url = "http://localhost:3000/users"
         const parameters = {
@@ -19,15 +20,18 @@ export default class LoginConsultas{
                         window.localStorage.setItem("user",user.name)
                         window.location.href='src/view/todolist.html'
                     }else{
-                        console.log("Error el password y/o usuario son incorrectos")
+                       
+                        messageError = "Error la contraseña y/o usuario son incorrectos"
                     }
                 })
             }else{
-                console.log("el nombre y el pass estan vacios")
+                messageError = "el campo usuario y/o contraseña estan vacios"
             }
         }else{
             console.log("No se ha introducido ningun usuario")
         }
+
+        return messageError
     }
 
 }
