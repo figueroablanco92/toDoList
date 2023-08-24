@@ -45,16 +45,19 @@
 
       <main class="container mt-4">
 
-        <h1>ToDoList App</h1>
+        <h1 class="text-center" id="mainTitle">ToDoList App</h1>
 
         <form id="form-task">
           <div class="mb-3">
+            <input type="hidden" class="form-control" name="idd">
+          </div>
+          <div class="mb-3">
             <label for="txtTitleTask" class="form-label">Titulo</label>
-            <input type="email" class="form-control" id="txtTitleTask">
+            <input type="text" class="form-control" id="txtTitleTask" name="title">
           </div>
           <div class="mb-3">
             <label for="txtDescriptionTask" class="form-label">Descripcion</label>
-            <textarea class="form-control" id="txtDescriptionTask" rows="3"></textarea>
+            <textarea class="form-control" id="txtDescriptionTask" rows="3" name="description"></textarea>
           </div>
           <div class="d-grid gap-2">
             <input class="btn btn-primary" type="submit" value="Guardar Tarea" id="btnLogin">
