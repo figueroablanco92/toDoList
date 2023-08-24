@@ -3,6 +3,7 @@ import Task from "../model/Task.js"
 import Error from "../utils/Error.js"
 
 const formTask = document.getElementById("form-task")
+const formSelectFilterTask =  document.getElementById("form-select-filter-tasks")
 const mainTitle = document.getElementById("mainTitle")
 const listTask = document.getElementById("list-task")
 let currentUser = document.getElementById("currentUser")
@@ -14,6 +15,31 @@ document.addEventListener("DOMContentLoaded", async () =>{
 
     currentUser.textContent= `Bienvenido ${localStorage.getItem("user")}` 
     showTasks(tasks)
+})
+
+formSelectFilterTask.addEventListener("change",async ()=>{
+    
+    const tasks = await TasksQueries.getAllTasks()
+
+    if(formSelectFilterTask.value == 1){
+
+      const completedTasks = tasks.filter( task =>{
+        if(task.completed == true){
+            return task
+        }
+       
+      }) 
+
+      listTask.innerHTML = ""
+      showTasks(completedTasks)
+
+      
+    }else if(formSelectFilterTask.value == 2){
+        listTask.innerHTML = ""
+        showTasks(tasks)
+    }
+
+   
 })
 
 document.addEventListener("click", e =>{

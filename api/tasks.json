@@ -15,13 +15,13 @@
     {
       "title": "aprender react",
       "description": "prioridad",
-      "completed": false,
+      "completed": true,
       "id": 1
     },
     {
       "title": "repasar metodologías ágiles",
       "description": "el fin de semana",
-      "completed": false,
+      "completed": true,
       "id": 2
     },
     {
@@ -29,6 +29,12 @@
       "description": "los minimos🤞",
       "completed": false,
       "id": 3
+    },
+    {
+      "title": "aprender ingles",
+      "description": "muy muy importante 👌",
+      "completed": false,
+      "id": 4
     }
   ]
 }
